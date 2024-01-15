@@ -1,11 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import '../src/Styles/Styles.css';
+import { Route, Routes, HashRouter as Router } from 'react-router-dom';
+import PetSelection from './pages/PetSelection/PetSelection';
 
 function App() {
   return (
-    <div className="App">
-      
+    <Router>
+    <div>
+      <Routes>
+        <Route path="/PetSelection" element={<PetSelection/>}/>
+      </Routes>
     </div>
+    </Router>
   );
 }
 
